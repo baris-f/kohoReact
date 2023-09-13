@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
       <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
               <div className="col-span-full hidden lg:col-span-1 lg:block">
-                  <a className="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
+                  <a className="flex-none text-xl font-semibold dark:text-white" href="src/app#" aria-label="Brand">Koho</a>
                   <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Koho.</p>
               </div>
 
@@ -13,16 +13,10 @@ export default function Footer() {
                   <div className="mt-3 grid space-y-3 text-sm">
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Pricing</a></p>
+                          href="src/app#">Pricing</a></p>
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Changelog</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Docs</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Download</a></p>
+                          href="src/app#">Changelog</a></p>
                   </div>
               </div>
 
@@ -32,23 +26,14 @@ export default function Footer() {
                   <div className="mt-3 grid space-y-3 text-sm">
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">About us</a></p>
+                          href="src/app#">About us</a></p>
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Blog</a></p>
+                          href="src/app#">Blog</a></p>
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Careers</a> <span
+                          href="src/app#">Careers</a> <span
                           className="inline text-blue-600 dark:text-blue-500">— We're hiring</span></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Customers</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Newsroom</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Sitemap</a></p>
                   </div>
               </div>
 
@@ -58,46 +43,10 @@ export default function Footer() {
                   <div className="mt-3 grid space-y-3 text-sm">
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Community</a></p>
+                          href="src/app#">Community</a></p>
                       <p><a
                           className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Help & Support</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">eBook</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">What's New</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Status</a></p>
-                  </div>
-              </div>
-
-              <div>
-                  <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Developers</h4>
-
-                  <div className="mt-3 grid space-y-3 text-sm">
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Api</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Status</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">GitHub</a> <span className="inline text-blue-600 dark:text-blue-500">— New</span></p>
-                  </div>
-
-                  <h4 className="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Industries</h4>
-
-                  <div className="mt-3 grid space-y-3 text-sm">
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Financial Services</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="#">Education</a></p>
+                          href="src/app#">Help & Support</a></p>
                   </div>
               </div>
           </div>
@@ -137,7 +86,7 @@ export default function Footer() {
                               className="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
                               aria-labelledby="footer-language-dropdown">
                               <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                                 href="#">
+                                 href="src/app#">
                                   <svg className="w-3.5 h-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-us" viewBox="0 0 512 512">
                                       <g fill-rule="evenodd">
@@ -158,7 +107,7 @@ export default function Footer() {
                                   English (US)
                               </a>
                               <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                                 href="#">
+                                 href="src/app#">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-de" viewBox="0 0 512 512">
                                       <path fill="#ffce00" d="M0 341.3h512V512H0z"/>
@@ -168,7 +117,7 @@ export default function Footer() {
                                   Deutsch
                               </a>
                               <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                                 href="#">
+                                 href="src/app#">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-dk" viewBox="0 0 512 512">
                                       <path fill="#c8102e" d="M0 0h512.1v512H0z"/>
@@ -178,7 +127,7 @@ export default function Footer() {
                                   Dansk
                               </a>
                               <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                                 href="#">
+                                 href="src/app#">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-it" viewBox="0 0 512 512">
                                       <g fill-rule="evenodd" stroke-width="1pt">
@@ -190,7 +139,7 @@ export default function Footer() {
                                   Italiano
                               </a>
                               <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                                 href="#">
+                                 href="src/app#">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        xmlnsXlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn"
                                        viewBox="0 0 512 512">
@@ -216,24 +165,24 @@ export default function Footer() {
 
                       <div className="space-x-4 text-sm ml-4">
                           <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                             href="#">Terms</a>
+                             href="src/app#">Terms</a>
                           <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                             href="#">Privacy</a>
+                             href="src/app#">Privacy</a>
                           <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                             href="#">Status</a>
+                             href="src/app#">Status</a>
                       </div>
                   </div>
 
                   <div className="flex justify-between items-center">
                       <div className="mt-3 sm:hidden">
-                          <a className="flex-none text-xl font-semibold dark:text-white" href="#"
+                          <a className="flex-none text-xl font-semibold dark:text-white" href="src/app#"
                              aria-label="Brand">Brand</a>
                           <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
                       </div>
 
                       <div className="space-x-4">
                           <a className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                             href="#">
+                             href="src/app#">
                               <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                    fill="currentColor" viewBox="0 0 16 16">
                                   <path
@@ -241,7 +190,7 @@ export default function Footer() {
                               </svg>
                           </a>
                           <a className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                             href="#">
+                             href="src/app#">
                               <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                    fill="currentColor" viewBox="0 0 16 16">
                                   <path
@@ -249,7 +198,7 @@ export default function Footer() {
                               </svg>
                           </a>
                           <a className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                             href="#">
+                             href="src/app#">
                               <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                    fill="currentColor" viewBox="0 0 16 16">
                                   <path
