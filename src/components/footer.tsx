@@ -59,8 +59,8 @@ export default function Footer() {
                                   className="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                               <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                    id="flag-icon-css-us" viewBox="0 0 512 512">
-                                  <g fill-rule="evenodd">
-                                      <g stroke-width="1pt">
+                                  <g fillRule="evenodd">
+                                      <g strokeWidth="1pt">
                                           <path fill="#bd3d44"
                                                 d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
                                                 transform="scale(3.9385)"/>
@@ -78,7 +78,7 @@ export default function Footer() {
                               <svg className="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16"
                                    height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                               </svg>
                           </button>
 
@@ -89,8 +89,8 @@ export default function Footer() {
                                  href="src/app#">
                                   <svg className="w-3.5 h-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-us" viewBox="0 0 512 512">
-                                      <g fill-rule="evenodd">
-                                          <g stroke-width="1pt">
+                                      <g fillRule="evenodd">
+                                          <g strokeWidth="1pt">
                                               <path fill="#bd3d44"
                                                     d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
                                                     transform="scale(3.9385)"/>
@@ -130,7 +130,7 @@ export default function Footer() {
                                  href="src/app#">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-it" viewBox="0 0 512 512">
-                                      <g fill-rule="evenodd" stroke-width="1pt">
+                                      <g fillRule="evenodd" strokeWidth="1pt">
                                           <path fill="#fff" d="M0 0h512v512H0z"/>
                                           <path fill="#009246" d="M0 0h170.7v512H0z"/>
                                           <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/>
@@ -148,15 +148,15 @@ export default function Footer() {
                                       </defs>
                                       <path fill="#de2910" d="M0 0h512v512H0z"/>
                                       <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)"
-                                           xlinkhref="#a"/>
+                                           xlinkHref="#a"/>
                                       <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)"
-                                           xlinkhref="#a"/>
+                                           xlinkHref="#a"/>
                                       <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)"
-                                           xlinkhref="#a"/>
+                                           xlinkHref="#a"/>
                                       <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)"
-                                           xlinkhref="#a"/>
+                                           xlinkHref="#a"/>
                                       <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)"
-                                           xlinkhref="#a"/>
+                                           xlinkHref="#a"/>
                                   </svg>
                                   中文 (繁體)
                               </a>
