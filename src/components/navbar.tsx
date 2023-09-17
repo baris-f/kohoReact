@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/images/logo.png";
+import logo from "../../public/images/kohoH.png";
 
 export default function Navbar() {
   return (
@@ -12,9 +12,9 @@ export default function Navbar() {
                   <a className="flex-none text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
                       <Image
                       src={logo}
-                      alt="Koho Logo"
-                      width={64}
-                      height={24}
+                      alt="Koho Logo and Text"
+                      width={160}
+                      height={64}
                       priority
                   /></a>
                   <div className="sm:hidden">

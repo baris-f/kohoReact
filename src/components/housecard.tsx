@@ -1,6 +1,18 @@
 import Image from 'next/image'
 
-export default function HouseCard({ house }) {
+export type House = {
+    name: string;
+    description: string;
+    price: number;
+    img: string;
+    rating: number;
+};
+
+type Props = {
+    house: House;
+}
+
+const HouseCard: React.FC<Props> = ({house}) => {
     const { name, description, price, img, rating } = house;
 
   return (
@@ -23,3 +35,4 @@ export default function HouseCard({ house }) {
       </div>
   )
 }
+ export default  HouseCard;

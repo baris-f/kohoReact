@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import HouseCard from "@/components/housecard";
+import HouseCard, { House } from "@/components/housecard";
+import {useCallback, useEffect, useState} from "react";
+
 // import { homeList } from "@/utils/data";
 
 const getData = async () => {
@@ -8,13 +10,42 @@ const getData = async () => {
   return res.json();
 }
 
-export default async function Grid() {
-  const homeList = await getData();
+function useTest() {
+  const [value, setValue] = useState<House[] | null>(null);
+  const [loading, setLoading] = useState(false)
 
+  const loadData = useCallback(async () => {
+    setLoading(true);
+    setValue(await getData());
+    setLoading(false);
+  }, [])
+
+  useEffect(() => {
+    loadData();
+  }, [])
+  return { data: value, loading };
+}
+
+type Props = {
+  children: JSX.Element
+}
+const Grid: React.FC<Props> = ({children}) => {
+  const { data, loading } = useTest();
+
+  if (!data || loading)   return (
+      <div className="flex">
+        <h1 className="text-xl">Loading</h1>
+        <span className="loading loading-spinner loading-md"></span>
+      </div>
+  )
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols4 xl:grid-cols-5 gap-6">
-        {homeList.map((house) => (<HouseCard house={house} />)
+        {data.map((house, index) => (<HouseCard key={index} house={house} />)
         )}
+      {children}
+      {}
     </div>
   )
 }
+
+export default Grid;

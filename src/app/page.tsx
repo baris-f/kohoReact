@@ -1,5 +1,7 @@
+'use client';
+
 import Image from 'next/image'
-import Grid from '../components/grid.tsx'
+import Grid from '@/components/grid'
 import logo from '../../public/images/logo.png'
 import Footer from "@/components/footer";
 import Search from "@/components/search";
@@ -10,6 +12,7 @@ export default function Home() {
         <Search className="mb-2" >
         </Search>
         <Grid>
+            <div></div>
         </Grid>
     </main>
   )
