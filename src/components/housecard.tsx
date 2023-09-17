@@ -17,6 +17,7 @@ const HouseCard: React.FC<Props> = ({house}) => {
 
   return (
       <div className="rounded-md flex flex-col overflow-hidden">
+          <a href="/house">
           <Image
               src={img}
               alt=""
@@ -32,6 +33,7 @@ const HouseCard: React.FC<Props> = ({house}) => {
               <p className="text-base text-slate-900">{description}</p>
               <p className="pt-2 font-bold">{price} ₩</p>
           </div>
+          </a>
       </div>
   )
 }
