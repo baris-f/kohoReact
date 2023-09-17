@@ -13,6 +13,7 @@ const config: Config = {
       colors: {
         primary: '#2C67FF',
         secondary: '#FFF5C0',
+        babyblue: '#E0E9FF'
       },
     },
   },

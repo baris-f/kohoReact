@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import icon from "../../public/favicon.ico";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,11 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
-      <body className={`${inter.className}`}>
-      <Navbar />
-      {children}
-      <Footer />
-      </body>
+        <head>
+            <link rel='icon' href={icon.src}/>
+            <title>Koho</title>
+        </head>
+        <body className={`${inter.className}`}>
+        <Navbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   )
 }
