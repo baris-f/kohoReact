@@ -1,5 +1,3 @@
-
-
 export default function Home() {
   return (
         <main className="w-full max-w-md mx-auto p-6 my-auto">
@@ -9,7 +7,7 @@ export default function Home() {
                     <div className="text-center">
                         <h1 className="block text-2xl font-bold text-gray-800 dark:text-white">Sign in</h1>
                         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                            Don't have an account yet?
+                            Don{"\'"}t have an account yet?
                             <a className="text-blue-600 decoration-2 hover:underline font-medium"
                                href="/signup">
                                 Sign up here

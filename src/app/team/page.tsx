@@ -11,15 +11,15 @@ export default function Home() {
 
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                   <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                      <img className="rounded-lg w-20 h-20" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="Image Description"/>
+                      <img className="rounded-lg w-20 h-20" src="https://media.licdn.com/dms/image/D4E03AQHmc9e9QkIV_A/profile-displayphoto-shrink_800_800/0/1685325344575?e=1700697600&v=beta&t=XXgiD280GZ1ETa9SeDRZj-veEGI0YFeBsZtTGHvzrqU" alt="Image Description"/>
 
                           <div className="sm:flex sm:flex-col sm:h-full">
                               <div>
                                   <h3 className="font-medium text-gray-800 dark:text-gray-200">
-                                      David Forren
+                                      정승재
                                   </h3>
                                   <p className="mt-1 text-xs uppercase text-gray-500">
-                                      Founder / CEO
+                                      Marketing
                                   </p>
                               </div>
                           </div>
@@ -31,7 +31,7 @@ export default function Home() {
                           <div className="sm:flex sm:flex-col sm:h-full">
                               <div>
                                   <h3 className="font-medium text-gray-800 dark:text-gray-200">
-                                      Amil Evara
+                                      안채희
                                   </h3>
                                   <p className="mt-1 text-xs uppercase text-gray-500">
                                       UI/UX Designer
@@ -46,7 +46,7 @@ export default function Home() {
                       <div className="sm:flex sm:flex-col sm:h-full">
                           <div>
                               <h3 className="font-medium text-gray-800 dark:text-gray-200">
-                                  Ebele Egbuna
+                                  이승연
                               </h3>
                               <p className="mt-1 text-xs uppercase text-gray-500">
                                   Support Consultant
@@ -83,13 +83,12 @@ export default function Home() {
                       </div>
                   </div>
                   <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                      <div className="rounded-lg w-20 h-20 bg-babyblue"/>
-
+                      <div className="rounded-lg w-20 h-20 bg-slate-200"/>
                           <div>
                               <h3 className="font-medium text-gray-800 dark:text-gray-200">
                                   You ?
                               </h3>
-                              <a className="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500" href="#">
+                              <a className="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500" href="/soon">
                                   Join us
                               </a>
                           </div>

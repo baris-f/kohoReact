@@ -1,6 +1,11 @@
 import Image from "next/image";
+import Grid from "@/components/grid";
 
-export default function Search() {
+type Props = {
+    children: JSX.Element
+}
+
+const Search: React.FC<Props> = ({children}) => {
     return (
         <div className="mb-6">
             <div className="mt-3 sm:mt-6 mx-auto max-w-xl relative">
@@ -31,7 +36,7 @@ export default function Search() {
                     </div>
                 </form>
             </div>
-
+            {children}
             <div className="mt-3 sm:mt-10">
                 <a className="m-1 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
                    href="#">
@@ -87,3 +92,5 @@ export default function Search() {
         </div>
     )
 }
+
+export default Search;

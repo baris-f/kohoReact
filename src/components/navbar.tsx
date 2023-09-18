@@ -42,13 +42,10 @@ export default function Navbar() {
                       <a className="font-medium text-blue-600 sm:py-6 dark:text-blue-500" href="/"
                          aria-current="page">Home</a>
                       <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                         href="/soon">Rent</a>
+                         href="/presentation">About Koho</a>
                       <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                         href="/soon">List a house</a>
-                      <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                         href="/about">About us</a>
-
-
+                         href="/team">Our team</a>
+                      {/*
                       <a className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 sm:border-l sm:border-gray-300 sm:my-6 sm:pl-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
                          href="/login">
                           <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -58,6 +55,7 @@ export default function Navbar() {
                           </svg>
                           Log in
                       </a>
+                      */}
                   </div>
               </div>
           </nav>

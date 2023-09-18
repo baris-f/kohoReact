@@ -9,7 +9,8 @@ import Search from "@/components/search";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between px-24 py-8">
-        <Search className="mb-2" >
+        <Search>
+            <div></div>
         </Search>
         <Grid>
             <div></div>
