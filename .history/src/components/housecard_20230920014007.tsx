@@ -28,7 +28,7 @@ const HouseCard: React.FC<Props> = ({house}) => {
           <div className="py-2 pl-1 text-black flex flex-col">
               <div className="flex justify-between items-center">
               <h3 className="text-2xl font-bold">{name}</h3>
-                  <p className="text-sm"> {rating}</p>
+                  <p className="text-sm">★ {rating}</p>
               </div>
               <p className="text-base text-slate-900">{description}</p>
               <p className="pt-2 font-bold">{price} </p>

@@ -8,11 +8,11 @@ export type House = {
     rating: number;
 };
 
-type Props = {
-    house: House;
+type  = {
+    house: House,
 }
 
-const HouseCard: React.FC<Props> = ({house}) => {
+const HouseCard: React.FC<> = ({house}) => {
     const { name, description, price, img, rating } = house;
 
   return (
