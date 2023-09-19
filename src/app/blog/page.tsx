@@ -1,16 +1,25 @@
 
 export default function Home() {
-  return (
-      <main className="w-full max-w-5xl mx-auto p-6">
-          <div className="max-w-[185rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-              <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                  <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">BLOG</h2>
-                  <p className="mt-1 text-gray-600 dark:text-gray-400">For Florent</p>
-                  <p className="mt-1 text-blue-900 dark:text-gray-400">For Dogukan</p>
-                  <p className="mt-1 text-blue-600 dark:text-gray-400">For Hi</p>
-                  <p className="mt-1 text-blue-600 dark:text-gray-400">For Hi</p>
-              </div>
-          </div>
-      </main>
-  )
+    return (
+    <main className="w-full max-w-5xl mx-auto p-6">
+         <article className="format lg:format-lg">
+            <h1>Prototyping from A to Z: best practices for successful prototypes</h1>
+            <p className="lead">Flowbite is an open-source library of UI components built with the utility-first classes from Tailwind CSS. It also includes interactive elements such as dropdowns, modals, datepickers.</p>
+            <p>Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way, you can think things through before committing to an actual design project.</p>
+            <p>But then I found a <a href="#">component library based on Tailwind CSS called Flowbite</a>. It comes with the most commonly used UI components, such as buttons, navigation bars, cards, form elements, and more which are conveniently built with the utility classes from Tailwind CSS.</p>
+            
+            ...
+
+            <h2>When does design come in handy?</h2>
+            <p>While it might seem like extra work at a first glance, here are some key moments in which prototyping will come in handy:</p>
+            <ol>
+                <li><strong>Usability testing</strong>. Does your user know how to exit out of screens? Can they follow your intended user journey and buy something from the site you’ve designed? By running a usability test, you’ll be able to see how users will interact with your design once it’s live;</li>
+                <li><strong>Involving stakeholders</strong>. Need to check if your GDPR consent boxes are displaying properly? Pass your prototype to your data protection team and they can test it for real;</li>
+                <li><strong>Impressing a client</strong>. Prototypes can help explain or even sell your idea by providing your client with a hands-on experience;</li>
+                <li><strong>Communicating your vision</strong>. By using an interactive medium to preview and test design elements, designers and developers can understand each other — and the project — better.</li>
+            </ol>
+        </article>
+             
+    </main>
+    )
 }

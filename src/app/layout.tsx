@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
         <head>
             <link rel='icon' href={icon.src}/>
-            <title>Koho</title>
+            <title>KOHO</title>
         </head>
         <body className={`${inter.className}`}>
         <Navbar />
