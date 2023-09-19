@@ -6,19 +6,18 @@ export type House = {
     price: number;
     img: string;
     rating: number;
-    id: number;
 };
 
-type Props = {
+type  = {
     house: House;
 }
 
-const HouseCard: React.FC<Props> = ({house}) => {
-    const { name, description, price, img, rating, id } = house;
+const HouseCard: React.FC<> = ({house}) => {
+    const { name, description, price, img, rating } = house;
 
   return (
-      <div className="flex flex-col overflow-hidden rounded-md">
-          <a href={`/house/${id}`}>
+      <div className="rounded-md flex flex-col overflow-hidden">
+          <a href="/house">
           <Image
               src={img}
               alt=""
@@ -26,9 +25,9 @@ const HouseCard: React.FC<Props> = ({house}) => {
               height={100}
               className="h-[200px] object-cover rounded-md"
           />
-          <div className="flex flex-col py-2 pl-1 text-black">
-              <div className="flex items-center justify-between">
-              <h3 className="text-xl font-bold truncate overflow-hidden max-w-[200px]">{name}</h3>
+          <div className="py-2 pl-1 text-black flex flex-col">
+              <div className="flex justify-between items-center">
+              <h3 className="text-2xl font-bold">{name}</h3>
                   <p className="text-sm"> {rating}</p>
               </div>
               <p className="text-base text-slate-900">{description}</p>
