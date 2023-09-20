@@ -42,7 +42,7 @@ export default function Navbar() {
                         <a className="font-medium text-blue-600 sm:py-6 dark:text-blue-500" href="/"
                              aria-current="page">Home</a>
                          <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                         href="/blog">Blog</a>
+                         href="/soon">Blog</a>
                          <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
                          href="/presentation">About Koho</a>
                          <a className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"

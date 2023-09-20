@@ -23,7 +23,7 @@ export default function Home() {
                                     도우칸 아타르
                               </h3>
                               <p className="mt-1 text-xs uppercase text-gray-500">
-                                  Founder & CEO
+                                Co-Founder & CEO
                               </p>
                               
                           </div>
@@ -36,13 +36,13 @@ export default function Home() {
                           <div className="sm:flex sm:flex-col sm:h-full">
                               <div>
                               <h3 className="font-medium text-gray-800 dark:text-gray-200">
-                                    Seungjae Jung
+                                    Seungjae Jeong
                                   </h3>
                                   <h3 className="font-medium text-gray-500 dark:text-gray-200">
                                       정승재
                                   </h3>
                                   <p className="mt-1 text-xs uppercase text-gray-500">
-                                    COO & CMO
+                                    Co-Founder & COO
                                   </p>
                               </div>
                           </div>

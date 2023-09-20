@@ -42,7 +42,8 @@ export default function Home() {
                                       정승재
                                   </h3>
                                   <p className="mt-1 text-xs uppercase text-gray-500">
-                                    COO & CMO
+                                  Co-Founder, COO & CMO
+
                                   </p>
                               </div>
                           </div>

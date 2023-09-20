@@ -10,7 +10,7 @@ const Search: React.FC<Props> = ({children}) => {
         <div className="mb-6">
             <div className="text-center pb-3 md:pb-3">
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tighter tracking-tighter mb-2" data-aos="zoom-y-out">Find your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">Korean Home</span></h1>
-            <b className="text-xl text-gray-600 mb-5"> One-room • Sharehouse • Goshiwon</b>
+            <b className="text-xl text-gray-700 mb-5"> One-room • Sharehouse • Goshiwon</b>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-500 mb-4 mt-2" data-aos="zoom-y-out" data-aos-delay="150">The go-to platform for housing in Korea for students, workers, long-term stayers. Through various housing options find your next aparment</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
