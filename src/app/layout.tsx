@@ -8,8 +8,8 @@ import icon from "../../public/favicon.ico";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Koho',
-  description: 'Find your house in Korea !',
+  title: 'KOHO',
+  description: 'Find your home in Korea !',
 }
 
 export default function RootLayout({
