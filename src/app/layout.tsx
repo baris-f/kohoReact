@@ -1,5 +1,6 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import './globals.css';
+import { Suspense } from 'react';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google'
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -8,8 +9,8 @@ import icon from "../../public/favicon.ico";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Koho',
-  description: 'Find your house in Korea !',
+  title: 'KOHO',
+  description: 'Find your home in Korea !',
 }
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
         <head>
             <link rel='icon' href={icon.src}/>
-            <title>Koho</title>
+            <title>KOHO</title>
         </head>
         <body className={`${inter.className}`}>
         <Navbar />

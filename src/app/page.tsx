@@ -1,20 +1,27 @@
-'use client';
-
 import Image from 'next/image'
-import Grid from '@/components/grid'
-import logo from '../../public/images/logo.png'
-import Footer from "@/components/footer";
 import Search from "@/components/search";
+import HouseCard from "@/components/housecard";
+import House from '@/types/house';
 
-export default function Home() {
+const getData = async () => {
+  // await new Promise(resolve => setTimeout(resolve, 2000)); Uncomment to test and check the loading component
+  const res = await fetch('http://localhost:3000/api/homes', { method: "GET"});
+
+  return res.json();
+}
+
+export default async function Home() {
+  const data: House[] = await getData();
+
   return (
     <main className="flex flex-col items-center justify-between px-24 py-8">
         <Search>
             <div></div>
         </Search>
-        <Grid>
-            <div></div>
-        </Grid>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols4 xl:grid-cols-5">
+          {data.map((house, index) => (<HouseCard key={index} house={house} />)
+        )}
+        </div>
     </main>
   )
 }

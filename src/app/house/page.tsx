@@ -1,10 +1,8 @@
 import Image from "next/image";
-import {House} from "@/components/housecard";
-
 
 export default function Home() {
   return (
-      <main className="w-full max-w-md mx-auto p-6">
+      <main className="w-full max-w-md p-6 mx-auto">
           <Image
               src={"/images/house1-1.png"}
               alt=""
@@ -12,8 +10,8 @@ export default function Home() {
               height={100}
               className="h-[200px] object-cover rounded-md"
           />
-          <div className="py-2 pl-1 text-black flex flex-col">
-              <div className="flex justify-between items-center">
+          <div className="flex flex-col py-2 pl-1 text-black">
+              <div className="flex items-center justify-between">
                   <h3 className="text-2xl font-bold">House</h3>
                   <p className="text-sm">★ {3}</p>
               </div>

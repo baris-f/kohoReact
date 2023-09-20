@@ -1,47 +1,63 @@
+import Image from "next/image"
+import logo from "../../public/images/kohoH.png"
 export default function Footer() {
   return (
       <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
-              <div className="col-span-full hidden lg:col-span-1 lg:block">
-                  <a className="flex-none text-xl font-semibold dark:text-white" href="/soon" aria-label="Brand">Koho</a>
-                  <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Koho.</p>
+          <div className="grid grid-cols-2 gap-6 mb-10 md:grid-cols-3 lg:grid-cols-4">
+              <div className="hidden col-span-full lg:col-span-1 lg:block">
+                  
+                  <a className="flex-none text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
+                      <Image
+                      src={logo}
+                      alt="KOHO Logo and Text"
+                      width={160}
+                      height={64}
+                      priority
+                  /></a>
+                  <p className="mt-3 text-xs text-gray-600 sm:text-sm dark:text-gray-400">©2023 KOHO</p>
               </div>
 
               <div>
                   <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Product</h4>
 
-                  <div className="mt-3 grid space-y-3 text-sm">
+                  <div className="grid mt-3 space-y-3 text-sm">
                       <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                           href="/soon">Pricing</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                      {/*<p><a
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                           href="/soon">Changelog</a></p>
+                          */} 
                   </div>
+                    
               </div>
 
               <div>
                   <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Company</h4>
 
-                  <div className="mt-3 grid space-y-3 text-sm">
+                  <div className="grid mt-3 space-y-3 text-sm">
                       <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                          href="/about">About us</a></p>
-                      <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          href="/soon">About us</a></p>
+                    <p><a
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          href="/team">Our team</a></p>
+                      {/*<p><a
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                           href="/soon">Join us</a></p>
+                        */}
                   </div>
               </div>
 
               <div>
                   <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">Resources</h4>
 
-                  <div className="mt-3 grid space-y-3 text-sm">
+                  <div className="grid mt-3 space-y-3 text-sm">
                       <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                           href="/soon">Community</a></p>
                       <p><a
-                          className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                           href="/soon">Help & Support</a></p>
                   </div>
               </div>
@@ -52,7 +68,7 @@ export default function Footer() {
                   <div className="flex items-center gap-x-3">
                       <div className="hs-dropdown relative inline-flex [--placement:top-left]">
                           <button id="footer-language-dropdown" type="button"
-                                  className="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                  className="inline-flex items-center justify-center gap-2 px-3 py-2 text-sm text-gray-700 align-middle transition-all bg-white border rounded-md hs-dropdown-toggle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                               <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                    id="flag-icon-css-us" viewBox="0 0 512 512">
                                   <g fillRule="evenodd">
@@ -69,6 +85,7 @@ export default function Footer() {
                                             d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
                                             transform="scale(3.9385)"/>
                                   </g>
+                            
                               </svg>
                               English (US)
                               <svg className="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16"
@@ -81,7 +98,7 @@ export default function Footer() {
                           <div
                               className="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
                               aria-labelledby="footer-language-dropdown">
-                              <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              <a className="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md gap-x-2 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                  href="/soon">
                                   <svg className="w-3.5 h-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-us" viewBox="0 0 512 512">
@@ -102,7 +119,7 @@ export default function Footer() {
                                   </svg>
                                   English (US)
                               </a>
-                              <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              <a className="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md gap-x-2 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                  href="/soon">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-de" viewBox="0 0 512 512">
@@ -112,7 +129,7 @@ export default function Footer() {
                                   </svg>
                                   Deutsch
                               </a>
-                              <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              <a className="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md gap-x-2 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                  href="/soon">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-dk" viewBox="0 0 512 512">
@@ -122,7 +139,7 @@ export default function Footer() {
                                   </svg>
                                   Dansk
                               </a>
-                              <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              <a className="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md gap-x-2 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                  href="/soon">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        id="flag-icon-css-it" viewBox="0 0 512 512">
@@ -134,7 +151,7 @@ export default function Footer() {
                                   </svg>
                                   Italiano
                               </a>
-                              <a className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              <a className="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md gap-x-2 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                  href="/soon">
                                   <svg className="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
                                        xmlnsXlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn"
@@ -159,21 +176,21 @@ export default function Footer() {
                           </div>
                       </div>
 
-                      <div className="space-x-4 text-sm ml-4">
-                          <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                      <div className="ml-4 space-x-4 text-sm">
+                          <a className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                              href="/soon">Terms</a>
-                          <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          <a className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                              href="/soon">Privacy</a>
-                          <a className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                          <a className="inline-flex text-gray-600 gap-x-2 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                              href="/soon">Status</a>
                       </div>
                   </div>
 
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between">
                       <div className="mt-3 sm:hidden">
                           <a className="flex-none text-xl font-semibold dark:text-white" href="/soon"
                              aria-label="Brand">Brand</a>
-                          <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
+                          <p className="mt-1 text-xs text-gray-600 sm:text-sm dark:text-gray-400">© 2023 KOHO</p>
                       </div>
 
                       <div className="space-x-4">
