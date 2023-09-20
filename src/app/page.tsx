@@ -6,13 +6,11 @@ import House from '@/types/house';
 const getData = async () => {
   // await new Promise(resolve => setTimeout(resolve, 2000)); Uncomment to test and check the loading component
   const res = await fetch('http://localhost:3000/api/homes', { method: "GET"});
-
   return res.json();
 }
 
 export default async function Home() {
   const data: House[] = await getData();
-
   return (
     <main className="flex flex-col items-center justify-between px-24 py-8">
         <Search>
