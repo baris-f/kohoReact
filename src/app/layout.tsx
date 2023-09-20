@@ -1,5 +1,6 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import './globals.css';
+import { Suspense } from 'react';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google'
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";

@@ -1,13 +1,6 @@
 import Image from 'next/image'
-
-export type House = {
-    name: string;
-    description: string;
-    price: number;
-    img: string;
-    rating: number;
-    id: number;
-};
+import House from '@/types/house';
+import formatKRW from '@/utils/formatKRW';
 
 type Props = {
     house: House;
@@ -32,7 +25,7 @@ const HouseCard: React.FC<Props> = ({house}) => {
                   <p className="text-sm"> {rating}</p>
               </div>
               <p className="text-base text-slate-900">{description}</p>
-              <p className="pt-2 font-bold">{price} </p>
+              <p className="pt-2 font-bold">{formatKRW(price)}/month</p>
           </div>
           </a>
       </div>
