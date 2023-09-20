@@ -6,6 +6,7 @@ export type House = {
     price: number;
     img: string;
     rating: number;
+    id: number;
 };
 
 type Props = {
@@ -13,11 +14,11 @@ type Props = {
 }
 
 const HouseCard: React.FC<Props> = ({house}) => {
-    const { name, description, price, img, rating } = house;
+    const { name, description, price, img, rating, id } = house;
 
   return (
       <div className="rounded-md flex flex-col overflow-hidden">
-          <a href="/house">
+          <a href={`/house/${id}`}>
           <Image
               src={img}
               alt=""
@@ -27,11 +28,11 @@ const HouseCard: React.FC<Props> = ({house}) => {
           />
           <div className="py-2 pl-1 text-black flex flex-col">
               <div className="flex justify-between items-center">
-              <h3 className="text-2xl font-bold">{name}</h3>
-                  <p className="text-sm">★ {rating}</p>
+              <h3 className="text-xl font-bold truncate overflow-hidden max-w-[200px]">{name}</h3>
+                  <p className="text-sm"> {rating}</p>
               </div>
               <p className="text-base text-slate-900">{description}</p>
-              <p className="pt-2 font-bold">{price} ₩</p>
+              <p className="pt-2 font-bold">{price} </p>
           </div>
           </a>
       </div>

@@ -3,46 +3,94 @@ import { NextResponse } from 'next/server'
 export async function GET(request: Request) {
     const homeList = [
         {
-            name: 'Home 1',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house1-1.png',
-            rating: '4.9',
+            price: '₩250K/Month',
+            description: 'Sinchon Station',
+            name: 'Sinchon Goshiwon',
+            img: '/images/goshiwon-1.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 1
         },
         {
-            name: 'Home 2',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house2-1.png',
-            rating: '4.8',
+            price: '₩500K/Month',
+            description: 'Sinchon Station',
+            name: 'Monostay Sinchon Branch',
+            img: '/images/gw-2.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 2
         },
         {
-            name: 'Home 3',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house3-1.png',
-            rating: '4.9',
+            price: '₩350K/Month',
+            description: 'Sinchon Station',
+            name: 'Residence the Fore',
+            img: '/images/gw-4.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 3
         },
         {
-            name: 'Home 4',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house1-2.png',
-            rating: '4.7',
+            price: '₩330K/Month',
+            description: 'Sinchon Station',
+            name: 'JY House',
+            img: '/images/g2-6.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 4
         },
         {
-            name: 'Home 5',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house2-2.png',
-            rating: '3.8',
+            price: '₩380K/Month',
+            description: 'Sinchon Station',
+            name: 'Arderfore',
+            img: '/images/gw-7.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 5
         },
         {
-            name: 'Home 6',
-            description: 'Nice home',
-            price: '13,000',
-            img: '/images/house3-2.png',
-            rating: '4.6',
+            price: '₩290K/Month',
+            description: 'Sinchon Station',
+            name: 'Parisella',
+            img: '/images/gw-8.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 6
+        },
+        {
+            price: '₩450K/Month',
+            description: 'Hongik University Station',
+            name: 'Stay On ',
+            img: '/images/gw-9.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 7
+        },
+        {
+            price: '₩360K/Month',
+            description: 'Sinchon Station',
+            name: 'Open House Sinchon',
+            img: '/images/gw-11.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 8
+        },
+        {
+            price: '₩290K/Month',
+            description: 'Hongik University Station',
+            name: 'Easy Pine House Hongdae',
+            img: '/images/gw-12.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 9
+        },
+        {
+            price: '₩350K/Month',
+            description: 'Sinchon Station',
+            name: 'Oven House Sinchon',
+            img: '/images/gw-13.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            number: '+8229228088',
+            id: 10
         },
     ];
 

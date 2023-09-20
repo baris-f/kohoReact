@@ -34,7 +34,7 @@ const Grid: React.FC<Props> = ({children}) => {
   const { data, loading } = useTest();
 
   if (!data || loading)   return (
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols4 xl:grid-cols-5 gap-6 yolo">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols4 xl:grid-cols-5 gap-6">
         {(Array(9).fill(0)).map((_,index) => (<PulseCard key={'loading'+index} />)
         )}
         {children}
