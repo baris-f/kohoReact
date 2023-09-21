@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import House from '@/types/house';
-import {homeList} from '@/utils/data.ts';
+import {homeList} from '@/utils/data';
 
 
 

@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Grid from "@/components/grid";
-
 type Props = {
     children: JSX.Element
 }
