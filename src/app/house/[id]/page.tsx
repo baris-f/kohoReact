@@ -11,7 +11,17 @@ const getData = async () => {
 
 export default async function HousePage({params}: {params: { id: number}}) {
     const data: House[] = await getData();
-    const house = data[params.id]
+    let house = data[params.id];
+    if (house == undefined)
+        house = {
+            price: 350000,
+            description: 'Sinchon Station',
+            name: 'Oven House Sinchon',
+            img: '/images/gw-13.webp',
+            address: '37-22 Jongam-ro 3-gil, Jongam-dong, Seongbuk-gu, Seoul, South Korea',
+            phoneNumber: '+8229228088',
+            id: 10,
+        }
 
     return (
         <main className="flex justify-center w-full gap-4 p-6 mx-auto my-20">
