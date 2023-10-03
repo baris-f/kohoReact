@@ -4,7 +4,7 @@ const checkEnvironment = () => {
     let base_url =
         process.env.NODE_ENV === "development"
             ? "http://localhost:3000"
-            : "https://github.com/baris-f/kohoreact";
+            : "https://github.com/baris-f/kohoReact";
 
     return base_url;
 };
