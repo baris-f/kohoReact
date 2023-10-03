@@ -9,6 +9,9 @@ const getData = async () => {
     // await new Promise(resolve => setTimeout(resolve, 2000)); // Uncomment to test and check the loading component
     const res = await fetch(checkEnvironment().concat('/api/homes'), { method: "GET"});
 
+    console.log(res.headers.get('content-type'))
+    if (res.headers.get('content-type') != 'application/json')
+        return null;
     return res.json();
 }
 
