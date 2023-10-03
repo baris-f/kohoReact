@@ -1,17 +1,20 @@
 import Image from "next/image";
 import House from '@/types/house';
 import formatKRW from '@/utils/formatKRW';
+import checkEnvironment from '@/utils/checkEnv';
+
+
 
 const getData = async () => {
     // await new Promise(resolve => setTimeout(resolve, 2000)); // Uncomment to test and check the loading component
-    const res = await fetch('http://localhost:3000/api/homes', { method: "GET"});
+    const res = await fetch(checkEnvironment().concat('/api/homes'), { method: "GET"});
 
     return res.json();
 }
 
 export default async function HousePage({params}: {params: { id: number}}) {
     const data: House[] = await getData();
-    let house = data[params.id];
+    let house = data[params.id - 1];
     if (house == undefined)
         house = {
             price: 350000,

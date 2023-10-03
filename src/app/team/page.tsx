@@ -75,7 +75,7 @@ export default function Team() {
                                   Florent Baris
                               </h3>
                               <h3 className="font-medium text-gray-500 dark:text-gray-200">
-                                   프로랑 바리시
+                                   프로랑 바리스
                               </h3>
                               
                               <p className="mt-1 text-xs uppercase text-gray-500">

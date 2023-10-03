@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Search from "@/components/search";
 import HouseCard from "@/components/housecard";
 import House from '@/types/house';
+import checkEnvironment from "@/utils/checkEnv";
 
 const getData = async () => {
   // await new Promise(resolve => setTimeout(resolve, 2000)); Uncomment to test and check the loading component
-  const res = await fetch('http://localhost:3000/api/homes', { method: "GET"});
+  const res = await fetch(checkEnvironment().concat('/api/homes'), { method: "GET"});
   return res.json();
 }
 
